@@ -1,0 +1,21 @@
+public class OperatorPrecedenceAndCasting {
+    public static void main(String[] args) {
+        int a = 10;
+        double b = 3.5;
+
+        // Demonstrate operator precedence
+        int expressionResult = a + (int)b * 2; 
+        System.out.println("Expression result: " + expressionResult);
+        System.out.println("Explanation: a + (int)b * 2 = 10 + 3 * 2 = 10 + 6 = 16");
+
+        // Demonstrate implicit type casting
+        double implicitCastingResult = a + b; 
+        System.out.println("Implicit casting result: " + implicitCastingResult);
+        System.out.println("Explanation: a (int) is implicitly cast to double and added to b");
+
+        // Demonstrate explicit type casting
+        int explicitCastingResult = (int)(a + b); 
+        System.out.println("Explicit casting result: " + explicitCastingResult);
+        System.out.println("Explanation: a + b is calculated as double and then explicitly cast to int");
+    }
+}
