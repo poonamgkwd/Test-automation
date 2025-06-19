@@ -1,0 +1,47 @@
+
+import java.util.Scanner;
+
+public class ArithmeticOperations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input
+        System.out.print("Enter first number: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Enter second number: ");
+        int num2 = scanner.nextInt();
+
+        // Arithmetic operations
+        int addition = num1 + num2;
+        int subtraction = num1 - num2;
+        int multiplication = num1 * num2;
+        int division = num1 / num2;
+        int modulus = num1 % num2;
+
+        // Assignment operations
+        int a = num1;
+        a += num2;
+
+        int b = num1;
+        b -= num2;
+
+        int c = num1;
+        c *= num2;
+
+        int d = num1;
+        d /= num2;
+
+        // Output
+        System.out.println("Addition: " + addition);
+        System.out.println("Subtraction: " + subtraction);
+        System.out.println("Multiplication: " + multiplication);
+        System.out.println("Division: " + division);
+        System.out.println("Modulus: " + modulus);
+
+        System.out.println("Assignment with += : " + a);
+        System.out.println("Assignment with -= : " + b);
+        System.out.println("Assignment with *= : " + c);
+        System.out.println("Assignment with /= : " + d);
+    }
+}
